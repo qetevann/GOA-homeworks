@@ -1,6 +1,3 @@
-
-
-
 c = " gabrieli "
 
 if c == " gabrieli ":
