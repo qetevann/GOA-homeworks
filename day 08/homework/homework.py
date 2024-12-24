@@ -51,5 +51,5 @@ print(result)   # string, integer, float.
 num1 = 6
 num2 = 8
 num3 = 10
-average = (num1 + num2 + num) / 3
+average = (num1 + num2 + num3) / 3
 print(average)
