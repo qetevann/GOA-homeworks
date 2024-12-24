@@ -15,4 +15,4 @@ while c < 70:
 a = 5
 
 while a < 50:
-    print(a)    day 20 cw
+    print(a)    
