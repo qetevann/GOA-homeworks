@@ -1,0 +1,62 @@
+* {
+    
+    box-sizing: border-box
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 1600px;
+    padding: 10px;
+    background: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+   
+}
+
+
+    body{
+            background-color: aqua;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px;
+           
+    
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.abt {
+    background: aqua;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin:65px auto;
+}
+
+
+
+.abt-content h2{
+    color: blue;
+    font-size: 50px;
+}
+
+
