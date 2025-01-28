@@ -1,0 +1,123 @@
+* {
+    font-family: arial;
+    color: black;
+    font-size: 20px;
+    box-sizing: border-box;
+
+}
+
+.navigation {
+    padding: 20px;
+    justify-content: space-between;
+
+
+}
+
+
+.navigation a {
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    font-size: 17.6px;
+    color:rgb(190, 169, 152);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    
+}
+
+
+.navigation button {
+    width: 130px;
+    height: 50px;
+    background:transparent;
+    border: 2px solid rgb(190, 169, 152);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 500;
+    margin-left: 40px;
+    color:rgb(190, 169, 152);
+    transition: 0.5s;
+}
+
+.body {
+    background: url(https://preview.redd.it/xjfdv1go5rr81.png?width=640&crop=smart&auto=webp&s=14a8dd14e03d1df46a5734951d29994faf2c79c2);
+}
+
+
+.navigation button:hover {
+    background: rgb(255, 249, 168)
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.abt {
+    background: #e8bbbb;
+    overflow: hidden;
+}
+
+.heading h1 {
+    color: #5a2d2d;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin:65px auto;
+}
+
+.abt-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    
+}
+
+.abt-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color:#5a2d2d;
+}
+
+.abt-content p {
+    font-size: 24px;
+  
+    margin-bottom: 40px;
+    color:rgb(175, 94, 94);
+}
+
+.abt-image {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+.abt-content button {
+    display: inline-block;
+    background-color: #5f2e2e;
+    color:#e8bbbb;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.abt-content button:hover {
+    background-color: #f3f584;
+    transform: scale(1.1);
+}

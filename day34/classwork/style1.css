@@ -1,0 +1,42 @@
+* {
+    font-family: arial;
+    font-weight: 2000;
+    margin-left: 100px;
+    color: blue;
+}
+
+.title {
+    align-items: center;
+    font-size: 50px;
+}
+
+.text {
+    color: blue;
+    display: flex;
+    font-size: 20px;
+}
+
+.title_border {
+    border-radius: 50px;
+    border-color: aqua;
+}
+
+.item_text {
+    border-radius: 50px;
+    border-color: aqua; 
+
+}
+
+.btn {
+    color: blue;
+    border: none;
+    background: pink;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: cyan;
+    transition: 0.5s;
+}
