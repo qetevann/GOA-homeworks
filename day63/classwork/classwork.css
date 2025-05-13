@@ -1,0 +1,20 @@
+
+
+.text1:hover{
+    text-decoration: line-through;
+}
+
+.text1:active{
+
+    text-decoration: line-through #ff0000;
+}
+
+
+.text2:hover{
+    text-decoration: underline overline ;
+}
+
+.text2:active{
+    text-decoration: line-through underline overline #0000ff;
+
+}

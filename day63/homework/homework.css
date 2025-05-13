@@ -1,0 +1,18 @@
+
+h3{
+    text-decoration: underline orange;
+
+}
+
+.random-txt1{
+    text-decoration: underline yellow;
+
+}
+
+.random-txt2{
+    text-decoration: line-through purple;
+}
+
+.random-txt3{
+    text-decoration: overline green;
+}
