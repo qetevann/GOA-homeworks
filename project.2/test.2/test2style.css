@@ -1,0 +1,42 @@
+
+
+
+
+
+.item_image {
+    height: 130px;
+    width: 130px;
+    margin: 15px;
+   
+}
+
+
+
+
+.content {
+    margin: 0 auto;
+    padding: 2em;
+    width: 300px;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content::after, .content::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(red, green, blue, pink, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.content::before {
+    filter: blur(1.5rem);
+}
