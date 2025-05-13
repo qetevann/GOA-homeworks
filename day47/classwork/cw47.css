@@ -1,0 +1,29 @@
+
+/* 
+*{
+
+} */
+
+
+.main1 {
+    border: 30px;
+    border-color: aqua;
+}
+
+#first {
+    background: green;
+    height: 100px;
+    width: 100px;
+}
+
+#second{
+    background: blue;
+    height: 100px;
+    width: 100px;
+}
+
+#third {
+    background: red;
+    height: 100px;
+    width: 100px;
+}
