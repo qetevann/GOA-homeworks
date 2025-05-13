@@ -1,0 +1,18 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 200px; */
+    color: aqua;
+    background: black;
+}
+
+.title {
+    padding: 30px;
+
+    /* size: 200px 200px; */
+    
+    /* font-size: 200px 200px; */
+
+    /* width: 200px;
+    height: 200px; */
+
+}

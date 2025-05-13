@@ -1,0 +1,31 @@
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 200px;
+    font-size: 50px;
+    font-weight: 1000;
+    background-color: rgb(35, 110, 16);
+}
+
+.text{
+    color: aqua;
+
+}
+
+
+.bttn {
+    border-radius: 30px;
+    background: white;
+    color: aqua;
+    margin-left: 120px;
+    height: 100px;
+    width: 400px;
+
+}
+
+
+.bttn:hover{
+    background: red;
+    transition: 0.5s;
+}

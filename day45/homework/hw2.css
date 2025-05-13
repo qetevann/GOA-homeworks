@@ -1,0 +1,72 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    background: black;
+}
+
+
+h1 {
+    margin: 50px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+
+button{
+    height: 100px;
+    width: 200px;
+    border: 5px solid red;
+    border-radius: 10px;
+    border-color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: aqua;
+    transition: 0.5s;
+}
+
+.paragraph1 {
+    padding: 50px;
+    border: 2px solid rgb(65, 65, 100);
+
+    border-radius: 10px;
+
+    margin: 2px;
+
+}
+
+.paragraph2{
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid red;
+    border-radius: 10px;
+}
+
+
+.paragraph3{
+    padding: 20px;
+    margin: 20px;
+    border: 20px solid blue;
+    border-radius: 20px;
+}
+
+
+
+.paragraph3{
+    padding: 30px;
+    margin: 30px;
+    border: 30px solid green;
+    border-radius: 10px;
+}
+
+.paragraph4{
+    padding: 40px;
+    margin: 40px;
+    border: 40px solid yellow;
+    border-radius: 40px;
+}
+

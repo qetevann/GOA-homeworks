@@ -1,0 +1,42 @@
+
+
+*{
+    font-family: arial;
+    
+}
+
+
+.btn {
+    padding: 20px;
+    background: cyan;
+    color: blue;
+    margin: 500px;
+    margin-left: 800px;
+    border-radius: 15px;
+    border-color: blue;
+
+}
+
+.btn:hover{
+    background-color: white;
+    transform: 0.5s;
+}
+
+
+
+.paragraph1 {
+    color: blue;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.paragraph2 {
+    color: cyan;
+    font-size: 50px;
+    margin: 30px;
+}
+
+
+
+/*  */
