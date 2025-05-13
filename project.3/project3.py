@@ -1,0 +1,148 @@
+
+
+
+
+
+
+
+balance = 50000.00
+
+
+passw1 = 2403
+
+
+def app_on():
+    print('                               My balance')
+    print('                               ' + str(balance) + ' gel')
+    print(' ')
+    print(' ')
+    print('                               1. Withdraw')
+    print(' ')
+    print('                               2. Deposit')
+    print(' ')
+    print('                               3. Transfer')
+    print(' ')
+    print('                               4. Exit')
+
+
+def choice():
+    choice1to4 = input('   Enter your choice: ')
+
+    if choice1to4 == '1':
+        withdraw()
+    elif choice1to4 == '2':
+        deposit()
+    elif choice1to4 == '3':
+        transfer()
+    elif choice1to4 == '4':
+        print('          Exiting the application.')
+        exit()
+    else:
+        print('          Please enter a valid choice from 1 to 4.')
+
+
+def withdraw():
+    print('----------------------------------------------------------------------------------------------------------------------')
+    print('              Enter the amount: ')
+    withdraw_amount = float(input('gel- '))
+    print('              Withdraw ' + str(withdraw_amount) + ' gel?')
+    withdraw_answer = input('')
+
+    if withdraw_amount > balance:
+        print('          Your balance is insufficient. You cannot withdraw more than ' + str(balance) + ' gel.')
+    elif withdraw_answer == 'yes':
+
+            print('-------------------------------------------------------------------------------------------------------------------------')
+            print('      New balance: ' + str(balance - withdraw_amount) + ' gel')
+      
+    elif withdraw_answer == 'no':
+        print('          Cancel withdrowal? ')
+        withdraw_answer2 = input('')
+        if withdraw_answer2 == 'yes':
+            print("      Withdrowal has been canceled.")
+            print('-------------------------------------------------------------------------------------------------------------------------')
+            print('')
+            app_on()
+            choice()
+        elif withdraw_answer2 == "no":
+            print('      New balance: ' + str(balance) + ' gel.')
+            print('___________________________________________________________________________________________________________________________________________________________________________')
+
+            
+    #     else:
+    #         print('Your balance is insufficient. You cannot withdraw more than ' + str(balance) + ' gel.')
+    # print('___________________________________________________________________________________________________________________________________________________________________________')
+
+
+def deposit():
+    print('----------------------------------------------------------------------------------------------------------------------')
+    deposit_amount = float(input('          How much money would you like to deposit? '))
+    if deposit_amount < 1:
+        print('          You are not able to deposit less than 1 gel.')
+    else:
+        global balance  
+        balance += deposit_amount
+        print(f'{deposit_amount} gel has been deposited. New balance: {balance} gel')
+    print('___________________________________________________________________________________________________________________________________________________________________________')
+
+# gadaricxvis funqcia (carieli axla, shegidzlia rac ginda chawero..).
+def transfer():
+    print('Transfer Options:')
+    print(' ')
+    transfer_options = ('1. By phone number    ' + '    2. By card number')
+    print(transfer_options)
+    print(' ')
+    transfer_opt = int(input('Choose an option: '))
+    if transfer_opt == 1:
+        print("Enter phone number: ")
+        transfer_by_phone_num = str(int(input('')))
+        if transfer_by_phone_num <= 500000000:
+            print("This is not a valid phone number. Please, check again.")
+        elif transfer_by_phone_num > 599999999:
+            print('This in not a valid phone number. Please, check again.')
+        else:
+            print('How much money would you like to transfer on ' + transfer_by_phone_num + '?')
+            transfer_amount = float(input("gel- "))
+            print('              Transfer ' + str(transfer_amount) + ' gel?')
+            transfer_answer = input('')
+            if transfer_answer == 'yes':
+                print('-------------------------------------------------------------------------------------------------------------------------')
+                print('      New balance: ' + str(balance - transfer_amount) + ' gel')
+      
+            if transfer_amount > balance:
+                print('          Your balance is insufficient. You cannot transfer more than ' + str(balance) + ' gel.')
+            elif transfer_amount < 0.5:
+                 print('          You are not able to transfer less than 50 tetri.')
+    elif transfer_opt == 2:
+        print('Enter card number: ')
+        transfer_by_card_num = int(input(''))
+        if transfer_by_card_num >= 9999:
+            print("This is not a valid card number. Please, check again.")
+        elif transfer_by_card_num < 1000:
+             print("This is not a valid card number. Card number should be at least 4 digit(s).")
+            
+
+    print('___________________________________________________________________________________________________________________________________________________________________________')
+
+# Mtavari funqcia rom shexvide bankshi, (mtavari page)
+print('______________________________________________________________________________________________________________________________________________________________________________________________________')
+print(' ')
+title1 = ('                                                                                        Please enter your 4 digit passcode:')
+
+print(title1)
+print('_____________________')
+
+main_interface = int(input(''))
+
+if main_interface != passw1:
+    print('                                                                                   Incorrect 4 digit passcode. Please, try again.')
+else:
+    print('______________________________________________________________________________________________________________________________________________________________________________________________________')
+    print(' ')
+    print('           Welcome back!')
+    print(' ')
+    print('----------------------------------------------------------------------------------------------------------------------')
+    app_on()  # balansis da archevanis funqcia
+    choice()  # archevani(calke)
+
+
