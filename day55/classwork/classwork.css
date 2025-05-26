@@ -1,0 +1,20 @@
+
+
+#tour{
+    height: 200px;
+    width: 300px;
+    border: red solid;
+    background: url('https://images-ext-1.discordapp.net/external/EIPHeIzhFyp-9YC2uwsleP3nB14XgKM62VTcSEFni8M/%3Fq%3Dtbn%3AANd9GcTA2oASENe7GdCli1KnAl6cnDnuD6lGT60txQ%26s/https/encrypted-tbn0.gstatic.com/images?format=webp');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+img{
+    height: 100px;
+
+}
+
+#tour p{
+    color: white;
+    margin: 20px;
+}

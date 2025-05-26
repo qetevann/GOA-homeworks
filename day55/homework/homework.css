@@ -1,0 +1,30 @@
+
+
+
+#wrapper{
+    height: 250px;
+    width: 250px;
+    background: url(https://storage.georgia.travel/images/tbilisi-capital-of-georgia-country.webp);
+    background-position: 600px;
+    opacity: 70%;
+    border: 3px solid rgb(255, 197, 135);
+    font-size: xx-large;
+    border-radius: 10px;
+
+}
+
+h4{
+    color: #000000;
+}
+
+#wrapper:hover{
+    background: rgb(255, 197, 135) ease;
+    opacity: 50%;
+    color: #000000;
+}
+
+#wrapper:active{
+    background: url(https://storage.georgia.travel/images/tbilisi-capital-of-georgia-country.webp);
+    background-position: 600px;
+    opacity: 100%;
+}

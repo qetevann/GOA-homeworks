@@ -1,0 +1,26 @@
+
+
+#parent{
+    height: 50px;
+    width: 500px;
+    background: black;
+    border-radius: 10px;
+    border:#00ff00 solid;
+
+}
+
+#child{
+    height: 40px;
+    margin-top: 4px;
+    width: 2px;
+    background: #00ff00;
+    border-radius: 10px;
+    transition: width 2s ease;
+
+}
+
+#parent:hover #child{
+    width: 450px;
+    background: #00ff00;
+}
+
