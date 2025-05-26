@@ -1,0 +1,70 @@
+
+
+#main{
+    background: green;
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+    margin: 100px;
+    /* border: greenyellow 5px solid; */
+    animation: box 10s 2;
+    position: relative;
+}
+
+#main:hover{
+    background: greenyellow;
+    transition: 0.5s ease;
+    color: green;
+    
+    
+}
+
+#main:active{
+    background: blue;
+    color: white;
+}
+
+
+
+img{
+    height: 300px;
+    width: 300px;
+    border-top-left-radius: 20px;
+    margin: 0;
+    position: absolute;
+}
+
+p{
+    font-size: xx-large;
+    left: 370px;
+    top: 100px;
+    /* top: 370px; */
+    position: relative;
+    /* text-decoration:dotted; */
+}
+
+
+button{
+    position: absolute;
+    margin-left: 250px;
+    top: 500px;
+
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+    background: blue;
+    color: white;
+}
+
+
+button:hover{
+    background: greenyellow;
+    color: black;
+    transition: 0.5s ease;
+}
+
+button:active{
+    background: white;
+    color: red;
+}
