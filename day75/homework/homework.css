@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 4px;
+}
+
+/* Common styling */
+.grid-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #222;
+}
+
+
+.red    { background-color: red; }
+.white  { background-color: white; }
+.orange { background-color: orange; }
+.yellow { background-color: yellow; }

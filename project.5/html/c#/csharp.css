@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background: #1c1f26;
+  color: #c5fbe4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 18px;
+}
+
+header {
+  background: #111;
+  padding: 20px 40px;
+  font-size: 28px;
+  color:#4de3ec;
+  border-bottom: 1px solid #4de3ec;
+}
+
+header:hover{
+  color: #00ff99;
+  text-shadow: 0 0 12px #4de3ec;
+  transition: 0.5s ease-in-out;
+}
+
+.header2{
+  background: #2a2d35;
+  padding: 10px 40px;
+  font-size: 14px;
+  color: #ccc;
+  border-bottom: 1px solid #00ff99;
+}
+
+.header2:hover{
+  color: gray;
+  transition: 0.5s ease;
+}
+
+.main{
+  display: flex;
+  flex: 1;
+}
+
+.marcx-folderi {
+  width: 240px;
+  background: #181b20;
+  border-right: 1px solid #4de3ec;
+  padding: 20px;
+}
+
+
+.marcx-folderi:hover{
+  box-shadow: #4de3ec 0 0 12px;
+}
+
+.failebi{
+  list-style: none;
+  font-family: monospace;
+}
+
+.failebi li{
+  margin-bottom: 16px;
+  color: #4de3ec;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.failebi li:hover{
+  text-shadow: 0 0 5px #4de3ec;
+  color:#eeeeff;
+  font-size: 19px;
+}
+
+.editori{
+  flex: 1;
+  padding: 30px;
+  background: #0d1117;
+  overflow-y: auto;
+}
+
+pre{
+  background: #151a1f;
+  color: #00ff99;
+  padding: 20px;
+  border: 1px solid #00ff99;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+pre:hover{
+  color: #717171;
+  transition: 0.5s ease-in-out;
+}
+
+.editori2{
+  width: 300px;
+  background: #121212;
+  border-left: 1px solid #00ff99;
+  padding: 20px;
+  color: #00ff99;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+.outputi h3 {
+  margin-bottom: 10px;
+  color: #4de3ec;
+  font-size: 18px;
+}
+
+#outputi2{
+  background-color: #0f0f0f;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+  border: 1px solid rgb(86, 35, 107);;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  border-top: 1px solid rgb(86, 35, 107);
+  color: #aaa;
+}

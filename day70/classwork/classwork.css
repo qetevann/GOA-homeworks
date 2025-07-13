@@ -1,0 +1,44 @@
+
+body{
+    background: hsl(30, 54%, 90%);
+}
+
+
+.main{
+    height: 1200px;
+    width: 440px;
+    background: white;
+    border-radius: 8px;
+    position: absolute;
+}
+
+.prep{
+    height: 100px;
+    background: hsl(332, 51%, 32%);
+}
+
+img{
+    height: 180px;
+    width: 400px;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.text{
+    margin-left: 20px;
+    /* position: relative; */
+}
+
+h3{
+    color: hsl(24, 5%, 18%);
+    font-size: 28px;
+}
+
+
+.par1{
+    color:hsl(30, 10%, 34%);
+    font-size: small;
+    position: relative;
+    bottom: 10px;
+}

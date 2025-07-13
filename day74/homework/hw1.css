@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #eef;
+  font-family: sans-serif;
+}
+
+.grid-container-4x4{
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container-4x4 div{
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}

@@ -1,0 +1,122 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(234, 12%, 34%);
+  padding: 2rem;
+}
+
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.intro h1{
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.intro h1 span{
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.intro p{
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color: hsl(229, 6%, 66%);
+  font-size: 1rem;
+}
+
+
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+
+.card{
+  background-color: white;
+  border-top: 5px solid;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card p{
+  font-size: 0.9rem;
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 2rem;
+}
+
+.card img{
+  width: 40px;
+  align-self: flex-end;
+}
+
+.supervisor{
+  border-color: hsl(180, 62%, 55%);
+}
+
+.team-builder{
+  border-color: hsl(0, 78%, 62%);
+}
+
+.karma{
+  border-color: hsl(34, 97%, 64%);
+}
+
+.calculator{
+  border-color: hsl(212, 86%, 64%);
+}
+
+
+.middle-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.attribution{
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+}
+.attribution a{
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 900px){
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .middle-cards{
+    flex-direction: column;
+  }
+}

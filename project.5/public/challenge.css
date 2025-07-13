@@ -1,0 +1,75 @@
+
+
+
+/* #4de3ec */
+
+/* rgb(3, 25, 48) */
+
+
+body {
+  font-family: monospace;
+  padding: 20px;
+  background: #0b0f12;
+  color: #4de3ec;
+}
+
+h1 {
+  color: #4de3ec;
+}
+
+h1:hover{
+  text-shadow: 0 0 12px #00ffcc;
+  color: #eeeeff;
+  transition: 0.5s ease;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  font-family: monospace;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid black;
+  resize: vertical;
+  background:#0e131a;
+  color: #4de3ec;;
+  border-radius: 5px;
+  box-shadow: inset 0 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+textarea:hover{
+  box-shadow: 0 0 20px #00ffcc;
+  transition: 0.5s ease;
+  border: #4de3ec 1px solid;
+}
+
+
+
+button {
+    width: 130px;
+    height: 50px;
+    background:transparent;
+    border: 2px solid #4de3ec ;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 500;
+    color:#4de3ec ;
+    transition: 0.5s;
+    margin-top: 50px;
+}
+
+button:hover {
+    color: #eeeeff;
+    box-shadow: #4de3ec 0 0 12px;
+    font-size: 15px;
+}
+
+button:active{
+    background: #4de3ec;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+}

@@ -1,0 +1,114 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 960px;
+}
+
+
+.card{
+  color: white;
+  padding: 3rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .icon{
+  width: 64px;
+  margin-bottom: 2rem;
+}
+
+.card h2{
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card p{
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+
+.btn{
+  background-color: white;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sedan .btn{
+  color: hsl(31, 77%, 52%);
+}
+
+.suv .btn{
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn{
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover{
+  background:white;
+  
+  color: rgb(21, 21, 41);
+}
+
+
+.sedan{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+.attribution{
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a{
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 768px){
+  .container {
+    flex-direction: column;
+  }
+}

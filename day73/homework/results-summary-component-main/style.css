@@ -1,0 +1,151 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+
+.card{
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 700px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
+.result{
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.result h2{
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+.score-circle{
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score{
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.of{
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.result h3{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.description{
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}
+
+
+.summary{
+  flex: 1;
+  padding: 2rem;
+}
+
+.summary h2{
+  font-size: 1.2rem;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1.5rem;
+}
+
+.summary-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.reaction{
+  background-color: hsl(0, 100%, 95%);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory{
+  background-color: hsl(39, 100%, 95%);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal{
+  background-color: hsl(166, 100%, 95%);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual{
+  background-color: hsl(234, 100%, 95%);
+  color: hsl(234, 85%, 45%);
+}
+
+.continue-btn{
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continue-btn:hover{
+  background-color: hsl(241, 81%, 54%);
+}
+
+
+.attribution{
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a{
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px){
+  .card {
+    flex-direction: column;
+  }
+}

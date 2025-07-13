@@ -1,0 +1,42 @@
+
+
+
+
+body{
+  background-color: #fff;
+  padding: 50px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 0;
+  border: 3px solid black;
+}
+
+.grid > div{
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+}
+
+.red{
+  background-color: red;
+}
+
+.blue{
+  background-color: deepskyblue;
+}
+
+.yellow{
+  background-color: gold;
+}
+
+.purple{
+  background-color: purple;
+}
+
+.brown{
+  background-color: saddlebrown;
+}

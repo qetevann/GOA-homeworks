@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 balance = 50000.00
 
 
@@ -90,9 +96,9 @@ def transfer():
     if transfer_opt == 1:
         print("Enter phone number: ")
         transfer_by_phone_num = str(int(input('')))
-        if transfer_by_phone_num < 500000000:
+        if transfer_by_phone_num <= 500000000:
             print("This is not a valid phone number. Please, check again.")
-        elif transfer_by_phone_num > 50000000000:
+        elif transfer_by_phone_num > 599999999:
             print('This in not a valid phone number. Please, check again.')
         else:
             print('How much money would you like to transfer on ' + transfer_by_phone_num + '?')
@@ -118,7 +124,7 @@ def transfer():
 
     print('___________________________________________________________________________________________________________________________________________________________________________')
 
-# mtavari funqcia rom shexvide bankshi, (mtavari page)
+# Mtavari funqcia rom shexvide bankshi, (mtavari page)
 print('______________________________________________________________________________________________________________________________________________________________________________________________________')
 print(' ')
 title1 = ('                                                                                        Please enter your 4 digit passcode:')
@@ -142,40 +148,7 @@ else:
 
 
 
-def name1():
-    nam12= [1, 2, 3, 4, 5, 6, 7, 8]
+def account_creation():
+    name1 = int(input('')
 
-    name112 = input('Create username: ')
-
-    if name112 != len(nam12):
-        return 'Username should be more than 8 characters'
-    elif name112 == len(nam12):
-        return name112 + ' - username created.'
-    
-
-
-
-def password112():
-    passw12 = [1,2,3,4,5,6,7,8]
-
-    passw112 = int(input('Create password: '))
-
-    if passw112 != len(passw12):
-        return 'Password should be more than 8 characters.'
-    elif passw112 == len(passw12):
-        return 'Password has been created.'
-    
-
-
-# print('Save password?')
-
-# aa = input('')
-
-# if aa == 'yes' and aa == 'Yes' and aa == 'y' and aa == 'Y':
-#     print( 'Password has been saved.')
-# elif aa == 'no' and aa == 'No' and aa == 'n' and aa == "N":
-#     print('Password has not been saved.')
-# else:
-#     print('Error. Please choose between Yes and No.')
-
-
+    if name1 == len(

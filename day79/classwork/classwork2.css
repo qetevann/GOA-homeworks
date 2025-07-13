@@ -1,0 +1,23 @@
+
+
+
+body{
+    width: 100%;
+    background: black;
+
+}
+
+.parent{
+    height: 500px;
+    width: 500px;
+border: 2px solid white;
+display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(130px, 1fr));
+
+}
+
+.child{
+    background: cyan;
+    margin: 20px;
+}

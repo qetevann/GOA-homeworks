@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Challenge</title>
+  <link rel="stylesheet" href="challenge.css" />
+</head>
+<body>
+  <h1 id="title">Loading...</h1>
+  <p id="description"></p>
+  <textarea id="code"></textarea><br />
+  <button onclick="gagzavna()">Submit</button>
+  <p id="result"></p>
+  <button id="next-btn" style="display:none;" onclick="goToNext()">Next Kata ➡️</button>
+
+  <script>
+    const id = new URLSearchParams(window.location.search).get('id');
+    let currentIndex = -1;
+    let allChallenges = [];
+
+    fetch('/api/challenges')
+      .then(res => res.json())
+      .then(data => {
+        allChallenges = data;
+        currentIndex = allChallenges.findIndex(c => c.id === id);
+        if (currentIndex === -1) throw new Error('Invalid challenge');
+        const c = allChallenges[currentIndex];
+        document.getElementById('title').textContent = c.title;
+        document.getElementById('description').textContent = c.description;
+        document.getElementById('code').value = c.starterCode;
+      })
+      .catch(err => {
+        document.getElementById('title').textContent = 'Error loading challenge';
+        document.getElementById('description').textContent = err.message;
+        document.getElementById('code').style.display = 'none';
+      });
+
+    function gagzavna() {
+      const code = document.getElementById('code').value;
+      fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code, challengeId: id })
+      })
+        .then(res => res.json())
+        .then(res => {
+          const result = document.getElementById('result');
+          if (res.passed) {
+            result.textContent = '✅ Passed!';
+            document.getElementById('next-btn').style.display = 'inline-block';
+
+            const done = JSON.parse(localStorage.getItem('completedKatas')) || [];
+            if (!done.includes(id)) {
+              done.push(id);
+              localStorage.setItem('completedKatas', JSON.stringify(done));
+            }
+          } else {
+            result.textContent = '❌ Failed: ' + (res.error || res.output);
+            document.getElementById('next-btn').style.display = 'none';
+          }
+        });
+    }
+
+    function shemdegi() {
+      if (currentIndex + 1 >= allChallenges.length) {
+        alert('🎉 You completed all challenges!');
+      } else {
+        const nextId = allChallenges[currentIndex + 1].id;
+        window.location.href = `challenge.html?id=${nextId}`;
+      }
+    }
+  </script>
+</body>
+</html>

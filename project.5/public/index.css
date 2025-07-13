@@ -1,0 +1,72 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #0b0f12;
+  font-family: 'Share Tech Mono', monospace;
+  color: #4de3ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box{
+  background: #0e131a;
+  border: 1px solid #4de3ec;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffcc88;
+  width: 500px;
+  max-width: 90%;
+}
+
+.box:hover{
+  box-shadow: #4de3ec;
+  border: #14143b 1px solid;
+  transition: 0.5s ease;
+}
+
+.challengelist{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.challengelist li{
+  margin: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.challengelist li a{
+  color: #00ffcc;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-left: 3px solid transparent;
+}
+
+.challengelist li a:hover{
+  color: #1affaa;
+  border-left: 3px solid #00ffcc;
+  background: #0c181f;
+  box-shadow: 0 0 8px #00ffcc66;
+  text-shadow: #4de3ec 0 0 12px;
+}
+
+#progresi{
+  font-size: 14px;
+  color: #00bbaa;
+  border-top: 1px solid #00ffcc33;
+  padding-top: 10px;
+  text-align: right;
+  font-style: italic;
+}
+
+#progresi:hover{
+  text-shadow: #4de3ec 0 0 12px;
+  transition: 0.5s ease-in-out;
+}
