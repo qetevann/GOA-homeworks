@@ -1,0 +1,42 @@
+
+
+
+
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif};
+
+body{
+    background: #d7d7d7;
+}
+
+table{
+    border-bottom: rgb(52, 140, 105) solid;
+    border-top-left-radius: 5px;
+}
+
+.table-header{
+    background: rgb(52, 140, 105);
+    color: white;
+    height: 50px;
+    
+}
+
+.row-1{
+    background: white;
+    color:rgb(29, 29, 29);
+    height: 50px;
+}
+
+.row-2{
+    background: rgb(232, 232, 232);
+    color: rgb(52, 140, 105);
+    height: 50px;
+    font-weight: 700;
+}
+
+.row-3{
+    background: white;
+    height: 50px;
+    color:rgb(29, 29, 29);
+}
